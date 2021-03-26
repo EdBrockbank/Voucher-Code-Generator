@@ -1,24 +1,19 @@
 let codes = [];
 let codeDesc = [];
 let ticketRes = [];
-
 function collect(){
     let codeNum = $("#formdiv").children().length;
-    console.log(codeNum);
     for (let i = 0; i < codeNum; i++){
         let intRef = $('#' + i + 'IRef').val();
         let name = $('#' + i + 'name').val();
         let hRef = $('#' + i + 'HRef').val();
         let type = $('#' + i + 'select').val();
         let number = $('#' + i + 'Num').val();
-        // console.log(intRef + " , " + name + " , " + hRef + " , " + type + " , " + number);
         calc(intRef, name, hRef, type, number);
     }
     display();
 }
-
 function calc(intRef, name, hRef, type, number){
-    console.log(intRef + " , " + name + " , " + hRef + " , " + type + " , " + number);
     let shortRef = intRef.substr(intRef.length - 4);
     let nameSplit = name.split(" ");
     let initials = nameSplit[0].charAt(0) + nameSplit[1].charAt(0);
@@ -39,7 +34,6 @@ function calc(intRef, name, hRef, type, number){
         ticketRes.push(res);
     }
 }
-
 function display(){
     let cycles = codes.length;
     for (let i = 0;i < cycles;i++){
