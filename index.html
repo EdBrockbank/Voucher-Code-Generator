@@ -9,8 +9,35 @@
 <div class="container">
     <button class="btn btn-primary m-2" type="button" onclick="newSection()">New Code</button>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-check text-left container pl-5">
+                <input class="form-check-input checkbox" type="checkbox" name="seq" value="1" id="seq" disabled>
+                <label class="form-check-label" for="seq">
+                    Sequential?
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-check text-left container pl-5">
+                <input class="form-check-input checkbox" type="checkbox" name="seq" value="1" id="ticket" disabled>
+                <label class="form-check-label" for="ticket">
+                    Same Ticket?
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-check text-left container pl-5">
+                <input class="form-check-input checkbox" type="checkbox" name="seq" value="1" id="number" disabled>
+                <label class="form-check-label" for="number">
+                    Next Number?
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container-fluid text-center" id="formdiv">
-
 </div>
 <div class="container">
     <button class="btn btn-success m-2" type="button" onclick="collect()">Calculate Codes</button>
